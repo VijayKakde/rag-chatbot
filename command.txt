@@ -2,3 +2,5 @@ venv\Scripts\activate
 python ingest.py
 python ask.py
 Remove-Item -Recurse -Force chroma_db
+uvicorn main:app --reload
+streamlit run app.py
